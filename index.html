@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PITO.exe ULTIMATE</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#030806;color:#00ff80;
+ font-family:monospace;padding:20px;
+}
+h1{text-align:center;text-shadow:0 0 15px #00ff80}
+.box{
+ max-width:500px;margin:25px auto;padding:20px;
+ border:1px solid #00ff80;border-radius:12px;
+ background:#06130d;box-shadow:0 0 15px #003d20;
+}
+button,input{
+ width:100%;padding:13px;margin-top:12px;
+ background:#001b0e;color:#00ff80;
+ border:1px solid #00ff80;border-radius:6px;
+ font-family:monospace;
+}
+button{cursor:pointer}
+button:active{background:#00ff80;color:black}
+.hidden{display:none}
+.card{
+ border:1px solid #087b42;padding:15px;
+ margin:12px 0;border-radius:8px;
+}
+.small{color:#8affb9;font-size:12px}
+</style>
+</head>
+<body>
+
+<h1>PITO.exe</h1>
+<p style="text-align:center">ULTIMATE ADMIN EDITION</p>
+
+<div class="box" id="home">
+<h2> SYSTEM ONLINE</h2>
+<p>Welcome to PITO.exe Tools.</p>
+<div class="card">
+🛠️ PITO TOOLS DASHBOARD
+<p class="small">System ready.</p>
+</div>
+<button onclick="showAdmin()">ADMIN LOGIN</button>
+</div>
+
+<div class="box hidden" id="login">
+<h2>ADMIN ACCESS</h2>
+<input id="password" type="password"
+placeholder="Masukkan password admin">
+<button onclick="loginAdmin()">LOGIN</button>
+<button onclick="backHome()">KEMBALI</button>
+<p id="message"></p>
+</div>
+
+<div class="box hidden" id="admin">
+<h2>👑 ADMIN PANEL</h2>
+<div class="card">
+TOTAL PENGUNJUNG
+<h1 id="visitors">-</h1>
+</div>
+<div class="card">
+KUNJUNGAN HARI INI
+<h1 id="today">-</h1>
+</div>
+<div class="card">
+STATUS SISTEM
+<p id="status">Memuat...</p>
+</div>
+<button onclick="loadStats()">REFRESH DATA</button>
+<button onclick="logoutAdmin()">LOGOUT</button>
+</div>
+
+<p class="small" style="text-align:center">
+PITO.exe © 2026
+</p>
+
+<script>
+function showAdmin(){
+ home.classList.add("hidden");
+ login.classList.remove("hidden");
+}
+
+function backHome(){
+ login.classList.add("hidden");
+ home.classList.remove("hidden");
+}
+
+async function loginAdmin(){
+ const password=document.getElementById("password").value;
+ const message=document.getElementById("message");
+
+ message.textContent="Memeriksa akses...";
+
+ try{
+  const response=await fetch("/api/login",{
+   method:"POST",
+   headers:{"Content-Type":"application/json"},
+   credentials:"include",
+   body:JSON.stringify({password})
+  });
+
+  if(!response.ok) throw new Error("Login gagal");
+
+  login.classList.add("hidden");
+  admin.classList.remove("hidden");
+  loadStats();
+ }catch(e){
+  message.textContent="Akses ditolak atau server belum dipasang.";
+ }
+}
+
+async function loadStats(){
+ try{
+  const response=await fetch("/api/stats",{
+   credentials:"include"
+  });
+
+  if(!response.ok) throw new Error();
+
+  const data=await response.json();
+  visitors.textContent=data.total;
+  today.textContent=data.today;
+  status.textContent="ONLINE";
+ }catch(e){
+  status.textContent="Server belum terhubung.";
+ }
+}
+
+async function logoutAdmin(){
+ await fetch("/api/logout",{
+  method:"POST",
+  credentials:"include"
+ });
+
+ admin.classList.add("hidden");
+ home.classList.remove("hidden");
+ password.value="";
+}
+</script>
+
+</body>
+</html>
