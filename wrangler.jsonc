@@ -1,4 +1,3 @@
-
 {
   "name": "pito-ultimate",
   "main": "src/index.js",
@@ -7,6 +6,9 @@
     "directory": "./",
     "binding": "ASSETS",
     "run_worker_first": true
+  },
+  "ai": {
+    "binding": "AI"
   },
   "d1_databases": [
     {
