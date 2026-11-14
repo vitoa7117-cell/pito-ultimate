@@ -29,12 +29,15 @@
       "accessory": "acc_none"
     }
   ],
-  "users": {},
+  "users": {
+    "pito": "pito jago banget",
+    "sura": "tinggalnama"
+  },
   "posts": [],
   "dms": {},
   "banned": [],
   "coins": {
-    "pito": 100090
+    "sura": 50
   },
   "ownedItems": {
     "pito": [
