@@ -13,6 +13,20 @@
       "fontEffect": "",
       "shape": "shape_circle",
       "accessory": "acc_none"
+    },
+    {
+      "id": "msg_1794636468967_0.7163031761327611",
+      "user": "pito",
+      "avatar": "",
+      "text": "tes",
+      "replyTo": null,
+      "frame": "admin_galaxy",
+      "bubble": "dev_supreme_bubble",
+      "nameEffect": "supreme",
+      "textEffect": "",
+      "fontEffect": "",
+      "shape": "shape_hexagon",
+      "accessory": "acc_none"
     }
   ],
   "users": {},
@@ -20,7 +34,7 @@
   "dms": {},
   "banned": [],
   "coins": {
-    "pito": 99970
+    "pito": 99990
   },
   "ownedItems": {
     "pito": [
