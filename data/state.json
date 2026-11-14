@@ -40,9 +40,7 @@
     "sura": 50
   },
   "ownedItems": {
-    "pito": [
-      "shape_hexagon"
-    ]
+    "sura": []
   },
   "bios": {},
   "galleries": {},
@@ -60,6 +58,16 @@
       "accessory": "acc_dev_galaxy",
       "isVip": true,
       "hasPass": true
+    },
+    "sura": {
+      "avatar": "",
+      "frame": "",
+      "bubble": "",
+      "nameEffect": "",
+      "textEffect": "",
+      "fontEffect": "",
+      "shape": "shape_circle",
+      "accessory": "acc_none"
     }
   },
   "vipStatus": {},
