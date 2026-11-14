@@ -51,10 +51,12 @@
   "dms": {},
   "banned": [],
   "coins": {
-    "sura": 60
+    "pito": 100090
   },
   "ownedItems": {
-    "sura": []
+    "pito": [
+      "shape_hexagon"
+    ]
   },
   "bios": {},
   "galleries": {},
@@ -94,5 +96,9 @@
   "devTheme": "rgb_rainbow",
   "devAccessory": "acc_dev_crown",
   "devLoginMsg": "👑 DEVELOPER RGB LAGI ON NIH! Sapa developer yuk!",
-  "announcement": null
+  "announcement": {
+    "text": "hai sura",
+    "duration": 10000,
+    "time": 1794636661228
+  }
 }
