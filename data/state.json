@@ -34,7 +34,7 @@
   "dms": {},
   "banned": [],
   "coins": {
-    "pito": 99990
+    "pito": 100090
   },
   "ownedItems": {
     "pito": [
@@ -61,7 +61,9 @@
   },
   "vipStatus": {},
   "passStatus": {},
-  "dailyClaim": {},
+  "dailyClaim": {
+    "pito": "Sat Nov 14 2026"
+  },
   "bugReports": [],
   "lostReports": [],
   "devTheme": "rgb_rainbow",
