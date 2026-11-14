@@ -20,10 +20,12 @@
   "dms": {},
   "banned": [],
   "coins": {
-    "pito": 100070
+    "pito": 99970
   },
   "ownedItems": {
-    "pito": []
+    "pito": [
+      "shape_hexagon"
+    ]
   },
   "bios": {},
   "galleries": {},
@@ -37,7 +39,7 @@
       "nameEffect": "",
       "textEffect": "",
       "fontEffect": "",
-      "shape": "shape_circle",
+      "shape": "shape_hexagon",
       "accessory": "acc_none",
       "isVip": true,
       "hasPass": true
