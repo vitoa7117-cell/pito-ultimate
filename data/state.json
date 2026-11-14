@@ -66,11 +66,12 @@
     "sura"
   ],
   "coins": {
-    "pito": 100090
+    "pito": 100010
   },
   "ownedItems": {
     "pito": [
-      "shape_hexagon"
+      "shape_hexagon",
+      "font_0"
     ]
   },
   "bios": {},
@@ -84,7 +85,7 @@
       "bubble": "",
       "nameEffect": "",
       "textEffect": "",
-      "fontEffect": "",
+      "fontEffect": "font_0",
       "shape": "shape_hexagon",
       "accessory": "acc_dev_galaxy",
       "isVip": true,
