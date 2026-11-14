@@ -27,6 +27,20 @@
       "fontEffect": "",
       "shape": "shape_hexagon",
       "accessory": "acc_none"
+    },
+    {
+      "id": "msg_1794636633275_0.5122141565569822",
+      "user": "sura",
+      "avatar": "",
+      "text": "Tes",
+      "replyTo": null,
+      "frame": "",
+      "bubble": "",
+      "nameEffect": "",
+      "textEffect": "",
+      "fontEffect": "",
+      "shape": "shape_circle",
+      "accessory": "acc_none"
     }
   ],
   "users": {
@@ -37,7 +51,7 @@
   "dms": {},
   "banned": [],
   "coins": {
-    "sura": 50
+    "sura": 60
   },
   "ownedItems": {
     "sura": []
