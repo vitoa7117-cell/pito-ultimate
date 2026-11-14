@@ -1,11 +1,26 @@
 {
-  "messages": [],
+  "messages": [
+    {
+      "id": "msg_1794636394763_0.7400368125576059",
+      "user": "pito",
+      "avatar": "",
+      "text": "tes",
+      "replyTo": null,
+      "frame": "admin_galaxy",
+      "bubble": "dev_supreme_bubble",
+      "nameEffect": "supreme",
+      "textEffect": "",
+      "fontEffect": "",
+      "shape": "shape_circle",
+      "accessory": "acc_none"
+    }
+  ],
   "users": {},
   "posts": [],
   "dms": {},
   "banned": [],
   "coins": {
-    "pito": 50
+    "pito": 70
   },
   "ownedItems": {
     "pito": []
