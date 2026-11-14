@@ -41,6 +41,19 @@
       "fontEffect": "",
       "shape": "shape_circle",
       "accessory": "acc_none"
+    },
+    {
+      "id": "msg_1794636710575",
+      "user": "SYSTEM",
+      "avatar": "",
+      "text": "⚠️ PENGUMUMAN BAN: Akun @sura dibanned karena: \"Melanggar aturan komunitas.\".",
+      "frame": "",
+      "bubble": "",
+      "nameEffect": "",
+      "textEffect": "",
+      "fontEffect": "",
+      "shape": "shape_circle",
+      "accessory": "acc_none"
     }
   ],
   "users": {
@@ -49,7 +62,9 @@
   },
   "posts": [],
   "dms": {},
-  "banned": [],
+  "banned": [
+    "sura"
+  ],
   "coins": {
     "pito": 100090
   },
