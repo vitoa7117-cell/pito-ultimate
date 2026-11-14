@@ -3,6 +3,38 @@
   "users": {},
   "posts": [],
   "dms": {},
-  "banned": []
+  "banned": [],
+  "coins": {
+    "pito": 50
+  },
+  "ownedItems": {
+    "pito": []
+  },
+  "bios": {},
+  "galleries": {},
+  "followers": {},
+  "blocks": {},
+  "profilesMeta": {
+    "pito": {
+      "avatar": "",
+      "frame": "",
+      "bubble": "",
+      "nameEffect": "",
+      "textEffect": "",
+      "fontEffect": "",
+      "shape": "shape_circle",
+      "accessory": "acc_none",
+      "isVip": true,
+      "hasPass": true
+    }
+  },
+  "vipStatus": {},
+  "passStatus": {},
+  "dailyClaim": {},
+  "bugReports": [],
+  "lostReports": [],
+  "devTheme": "rgb_rainbow",
+  "devAccessory": "acc_dev_crown",
+  "devLoginMsg": "👑 DEVELOPER RGB LAGI ON NIH! Sapa developer yuk!",
+  "announcement": null
 }
- 
